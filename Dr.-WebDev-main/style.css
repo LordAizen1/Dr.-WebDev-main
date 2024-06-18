@@ -1,0 +1,256 @@
+/* Global styles */
+body {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    font-size: 17px;
+    line-height: 1.23536;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-top: 0.7em;
+    text-align: center;
+}
+
+.container {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#logo {
+    display: block;
+    margin: auto;
+}
+
+nav {
+    border: 1px solid #58A4B0;
+    border-left: none;
+    border-right: none;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5% 0;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-evenly;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+.nav-btn {
+    margin: 5%; /* Adjust margins using percentages for responsiveness */
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    display: flex;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+.tooltip {
+    visibility: hidden;
+    width: auto; /* Adjust width as needed */
+    max-width: 200px; /* Set a maximum width to prevent excessive growth */
+    background-color: #58A4B0;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px; /* Adjust padding to control size */
+    font-size: 14px; /* Adjust font size as needed */
+    position: absolute;
+    z-index: 1;
+    top: 100%; /* Position below the parent element (nav-btn) */
+    left: 50%; /* Center horizontally relative to the parent */
+    transform: translateX(-50%); /* Center horizontally */
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+
+.nav-btn {
+    position: relative; /* Ensure the parent is relatively positioned */
+}
+
+.nav-btn:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.centered {
+    color: #A9BCD0;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+.centered:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.ad {
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+.ad:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+header {
+    font-size: larger;
+    margin-bottom: 20px;
+    color: #A9BCD0;
+    text-align: center;
+}
+
+section, article, aside {
+    margin-bottom: 20px;
+    color: #A9BCD0;
+    text-align: center;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+a {
+    text-decoration: none;
+    color: #58A4B0;
+    text-align: center;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+a:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.imp {
+    font-size: larger;
+    text-decoration: underline;
+    text-align: center;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+#me {
+    font-size: 25px;
+    font-weight: lighter;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 20px;
+    font-style: normal;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+/* Contact Links Section */
+#con {
+    text-align: center; /* Align links to the center */
+}
+
+.contact {
+    display: inline-block; /* Display links inline */
+    margin: 0 10px; /* Adjust margin for spacing between links */
+    padding: 1.5%;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+    text-align: center; /* Center text */
+}
+
+.contact img {
+    vertical-align: middle; /* Align image vertically */
+    margin-right: 5px; /* Adjust spacing between image and text */
+}
+
+.contact:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+
+.feedback-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.feedback-section {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.feedback-form {
+    flex: 1;
+    max-width: 500px;
+    margin-right: 20px;
+    padding: 20px;
+    border: 1px solid #58A4B0;
+    border-radius: 4px;
+    background-color: #2B2B2B;
+}
+
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #2B2B2B;
+    color: #A9BCD0;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+
+.feedback-form input[type="submit"] {
+    background-color: #58A4B0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.feedback-form input[type="submit"]:hover {
+    background-color: #4093A6;
+}
+
+.feedback-header {
+    margin-bottom: 10px;
+}
+
+.feedback-title {
+    font-size: 30px;
+    text-align: left;
+    font-weight: bold;
+    color: #A9BCD0;
+    margin-bottom: 5px;
+}
+
+.feedback-subtitle {
+    font-size: 18px;
+    text-align: left;
+    color: #A9BCD0;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#last-footer {
+    color: #58A4B0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Hover effects */
+nav:hover,
+.nav-header:hover,
+.nav-btn:hover,
+.centered:hover,
+.ad:hover,
+section:hover,
+article:hover,
+aside:hover,
+a:hover,
+.imp:hover,
+#me:hover,
+.contact:hover{
+    transform: scale(1.1); /* Scale the element by 10% when hovered */
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. WebDev Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <img class="logo" src="dr-webdev-high-resolution-logo 1.png" width="300">
+        <div id="nav-header">
+            <nav>
+                <a href="#" class="nav-btn">Home</a>
+                <a href="#" class="nav-btn" onmouseover="showTooltip(this)" onmouseout="hideTooltip(this)">
+                    Know More
+                    <span class="tooltip" id="tooltip">Under Development</span>
+                </a>
+                
+                <a href="#last-footer" class="nav-btn">Get In Touch</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <p class="centered" style="font-size: larger;">Welcome to my site!</p>
+        <!-- Welcome GIF -->
+        <img src="Inside the Mind of a Coding Prodigy.gif">
+        <br><br>
+        <!-- About Me Section -->
+        <article class="centered">
+            <strong class="imp">About Me</strong>
+            <br><br>
+            <p id="me">
+                I am Mohammad Kaif, an undergraduate student at the prestigious Indraprasth Institute of Information and Technology, majoring in Computer Science and Engineering.
+                I am passionate about software development/engineering and currently in the process of learning. I aspire to reach a level where I can confidently get a role of an SDE.
+            </p>
+        </article>
+        <br><br>
+        <!-- Advertisement Section -->
+        <aside class="imp">
+            <strong>Advertisement</strong>
+        </aside>
+
+        <a class="ad" href="https://www.apple.com/in/iphone-15/" target="_blank" class="centered">
+            <img class="ad" src="https://i.pinimg.com/originals/be/cb/ca/becbca09cc81c9ecd1ce133c836b3f25.gif" alt="iPhone-15" height="150">
+        </a>
+        <br><br>
+
+        <!-- Feedback Form Section -->
+        <div class="feedback-container">
+            <div class="feedback-section">
+                <div class="feedback-header">
+                    <h2 class="feedback-title">Feedback</h2>
+                    <p class="feedback-subtitle">Please help us improve</p>
+                </div>
+            </div>
+            <div class="feedback-form">
+                <form id="form" action="submit_feedback.php" method="post">
+                    <div class="form-group">
+                        <label for="suggestion">Suggestions:</label>
+                        <textarea id="suggestion" name="suggestion" rows="4" placeholder="Enter your suggestions here..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br><br>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <hr>
+        <!-- Contact Links Section -->
+        <!-- Contact Links Section -->
+        <!-- Contact Links Section -->
+        <div id="con">
+            <a class="contact mail-me" href="mailto:mohdkaif2003@gmail.com">
+                <img src="https://mailmeteor.com/logos/assets/PNG/Gmail_Logo_White_512px.png" width="17.6" alt="Email">
+                Mail Me
+            </a>
+            <a class="contact github" href="https://github.com/LordAizen1" target="_blank">
+                <img src="https://static-00.iconduck.com/assets.00/github-icon-2048x1988-jzvzcf2t.png" width="17.6" alt="GitHub">
+                My GitHub
+            </a>
+        </div>
+
+
+        <br>
+        <!-- Footer Text Section -->
+        <div id="last-footer">
+            Made with &hearts; by Mohammad Kaif<br>
+            &#169; 2024, Dr. WebDev
+        </div>
+    </footer>
+</body>
+
+</html>
