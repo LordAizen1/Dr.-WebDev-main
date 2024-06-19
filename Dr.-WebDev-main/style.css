@@ -1,12 +1,12 @@
 /* Global styles */
 body {
+    line-height: 1.6;
     background-color: rgb(0, 0, 0);
-    color: aliceblue;
+    color: #E0E0E0;
     font-size: 17px;
-    line-height: 1.23536;
     font-weight: 400;
     letter-spacing: -.022em;
-    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: "Bebas Neue",sans-serif;
     margin-top: 0.7em;
     text-align: center;
 }
@@ -30,74 +30,76 @@ nav {
     align-items: center;
     justify-content: center;
     padding: 0.5% 0;
-    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+    transition: transform 0.3s ease;
 }
 
 .nav-header {
     display: flex;
     justify-content: space-evenly;
-    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .nav-btn {
-    margin: 5%; /* Adjust margins using percentages for responsiveness */
+    padding: 10px 20px;
+    margin: 5%;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
     display: flex;
-    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+    transition: transform 0.3s ease;
 }
 
 .tooltip {
     visibility: hidden;
-    width: auto; /* Adjust width as needed */
-    max-width: 200px; /* Set a maximum width to prevent excessive growth */
+    width: auto;
+    max-width: 200px;
     background-color: #58A4B0;
     color: white;
     text-align: center;
     border-radius: 6px;
-    padding: 8px; /* Adjust padding to control size */
-    font-size: 14px; /* Adjust font size as needed */
+    padding: 8px;
+    font-size: 14px;
     position: absolute;
     z-index: 1;
-    top: 100%; /* Position below the parent element (nav-btn) */
-    left: 50%; /* Center horizontally relative to the parent */
-    transform: translateX(-50%); /* Center horizontally */
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.3s, visibility 0.3s;
 }
 
-
 .nav-btn {
-    position: relative; /* Ensure the parent is relatively positioned */
+    position: relative;
 }
 
 .nav-btn:hover .tooltip {
+    transform: scale(1.1);
+    color: #4093A6;
     visibility: visible;
     opacity: 1;
 }
 
-
 .centered {
     color: #A9BCD0;
-    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+    transition: transform 0.3s ease;
 }
 
 .centered:hover {
-    transform: scale(1.1); /* Scale up on hover */
+    transform: scale(1.1);
 }
 
 .ad {
     display: flex;
     margin: 20px auto;
     justify-content: center;
-    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+    transition: transform 0.3s ease;
 }
 
 .ad:hover {
-    transform: scale(1.1); /* Scale up on hover */
+    transform: scale(1.1);
 }
 
 header {
+    padding: 10px 0;
     font-size: larger;
     margin-bottom: 20px;
     color: #A9BCD0;
@@ -108,25 +110,32 @@ section, article, aside {
     margin-bottom: 20px;
     color: #A9BCD0;
     text-align: center;
-    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+    transition: transform 0.3s ease;
+}
+
+article, section {
+    background-color: #2B2B2B;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 a {
     text-decoration: none;
     color: #58A4B0;
     text-align: center;
-    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+    transition: transform 0.3s ease;
 }
 
 a:hover {
-    transform: scale(1.1); /* Scale up on hover */
+    transform: scale(1.1);
 }
 
 .imp {
     font-size: larger;
     text-decoration: underline;
     text-align: center;
-    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+    transition: transform 0.3s ease;
 }
 
 #me {
@@ -137,31 +146,37 @@ a:hover {
     max-width: 800px;
     padding: 0 20px;
     font-style: normal;
-    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+    transition: transform 0.3s ease;
 }
 
-/* Contact Links Section */
+/* Adjust scroll margin to start showing the video earlier */
+main {
+    scroll-margin-top: 20%;
+}
+
 #con {
-    text-align: center; /* Align links to the center */
+    text-align: center;
 }
 
 .contact {
-    display: inline-block; /* Display links inline */
-    margin: 0 10px; /* Adjust margin for spacing between links */
-    padding: 1.5%;
-    transition: transform 0.3s ease; /* Add transition for smooth scaling */
-    text-align: center; /* Center text */
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    color: #58A4B0;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-align: center;
 }
 
 .contact img {
-    vertical-align: middle; /* Align image vertically */
-    margin-right: 5px; /* Adjust spacing between image and text */
+    vertical-align: middle;
+    margin-right: 5px;
 }
 
 .contact:hover {
-    transform: scale(1.1); /* Scale up on hover */
+    transform: scale(1.1);
+    color: #2093A6;
 }
-
 
 .feedback-container {
     display: flex;
@@ -233,10 +248,22 @@ a:hover {
     margin-bottom: 20px;
 }
 
+footer {
+    background-color: #1A1A1A;
+    padding: 20px 0;
+}
+
 #last-footer {
     color: #58A4B0;
     display: flex;
     justify-content: space-evenly;
+}
+
+#last-footer {
+    color: #A9BCD0;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 /* Hover effects */
@@ -251,6 +278,26 @@ aside:hover,
 a:hover,
 .imp:hover,
 #me:hover,
-.contact:hover{
-    transform: scale(1.1); /* Scale the element by 10% when hovered */
+.contact:hover {
+    transform: scale(1.1);
+}
+
+/* Jiggle Animation */
+@keyframes jiggle {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+}
+
+.jiggle {
+    animation: jiggle 0.7s ease-in-out;
 }
