@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know More About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <img class="logo" src="dr-webdev-high-resolution-logo 1.png" width="300">
+        <div id="nav-header">
+            <nav>
+                <a href="index.html" class="nav-btn">Home</a>
+                <a href="know-more.html" class="nav-btn">Know More</a>
+                <a href="#last-footer" class="nav-btn get-in-touch">Get In Touch</a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Content Section -->
+    <main>
+        <h1>More About Me</h1>
+        <!-- Article Section -->
+        <section class="article fade-in-from-below">
+            <h2>Technologies and Programming Languages in My Journey</h2>
+            <p class="centered">
+                In my journey as a computer science enthusiast, various technologies and programming languages have played pivotal roles in shaping my skills and career aspirations.
+            </p>
+            <p class="centered">
+                <strong>Technologies: Empowering Innovation</strong>
+                Technologies like ChatGPT have revolutionized how we interact with machines. 
+                <br>
+                As an aspiring software developer, I'm fascinated by AI's potential in fields like natural language processing and predictive analytics. 
+                <br>
+                These tools fuel my curiosity and passion for learning.
+            </p>
+            <p class="centered">
+                <strong>Programming Languages: The Building Blocks</strong>
+                Languages like C++ taught me efficient coding and performance optimization. 
+                <br>
+                C++'s fast nature made it my go-to for solving problems on Data Structure and Analysis. 
+                <br>
+                HTML ans CSS's role in web development has allowed me to create this Portfolio.
+            </p>
+        </section>
+        
+
+        <!-- Languages Section -->
+        <section class="languages fade-in-from-below">
+            <h2>Programming Languages I've Worked With</h2>
+            <div class="languages-list">
+                <div class="language">
+                    <img src="c++.png" alt="C++ Logo" width="50">
+                    <p>C++</p>
+                </div>
+                <div class="language">
+                    <img src="css.png" alt="CSS Logo" width="50">
+                    <p>CSS</p>
+                </div>
+                <div class="language">
+                    <img src="JS.png" alt="JavaScript Logo" width="50">
+                    <p>JavaScript</p>
+                </div>
+                <div class="language">
+                    <img src="c.png" alt="C Logo" width="50">
+                    <p>C</p>
+                </div>
+                <div class="language">
+                    <img src="python.png" alt="Python Logo" width="50">
+                    <p>Python</p>
+                </div>
+                <div class="language">
+                    <img src="java.png" alt="Java Logo" width="50">
+                    <p>Java</p>
+                </div>
+                <!-- Add more languages as needed -->
+            </div>
+        </section>
+
+        <!-- Technologies Section -->
+        <section class="technologies fade-in-from-below">
+            <h2>Technologies I've Worked With</h2>
+            <div class="technologies-list">
+                <div class="technology">
+                    <img src="chatgpt.png" alt="ChatGPT Logo" width="50">
+                    <p>ChatGPT</p>
+                </div>
+                <div class="technology">
+                    <img src="vscode.png" alt="VS Code Logo" width="50">
+                    <p>VS Code</p>
+                </div>
+                <div class="technology">
+                    <img src="intellij.png" alt="IntelliJ Logo" width="50">
+                    <p>IntelliJ</p>
+                </div>
+                <div class="technology">
+                    <img src="geeksforgeeks.png" alt="GeeksForGeeks Logo" width="50">
+                    <p>GeeksForGeeks</p>
+                </div>
+                <div class="technology">
+                    <img src="figma.png" alt="Figma" width="50">
+                    <p>Figma</p>
+                </div>
+                <div class="technology">
+                    <img src="github.png" alt="GitHub" width="50">
+                    <p>GitHub</p>
+                </div>
+                <!-- Add more technologies as needed -->
+            </div>
+        </section>
+        <section class="technologies fade-in-from-below">
+            <p class="centered">
+                <strong>A Continuous Learning Journey</strong>
+                My journey with these technologies and languages is ongoing.
+                <br>
+                Every new project and every line of code I write brings new insights and skills.
+                <br>
+                I am committed to leveraging these tools to create impactful solutions and to contribute to the tech community through innovation and collaboration.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <hr>
+        <div id="con">
+            <a class="contact mail-me" href="mailto:mohdkaif2003@gmail.com">
+                <img src="mail.png" width="17.6" alt="Email Icon">
+                Mail Me
+            </a>
+            <a class="contact" href="https://www.linkedin.com/in/mohammad-kaif-80a82923b/" target="_blank">
+                <img src="linkedin.png" width="15.8" alt="LinkedIn Icon">
+                LinkedIn
+            </a>
+            <a class="contact" href="https://github.com/LordAizen1" target="_blank">
+                <img src="github.png" width="15.8" alt="GitHub Icon">
+                GitHub
+            </a>
+        </div>
+        <div id="last-footer">
+            &copy; 2023 Dr Web Dev | Made with Love 💖.
+        </div>
+    </footer>
+
+    <!-- JavaScript for animations -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sectionsToAnimate = document.querySelectorAll('.fade-in-from-below');
+
+            function animateSections() {
+                sectionsToAnimate.forEach(section => {
+                    section.classList.add('active');
+                });
+            }
+
+            // Check if the current page is the "Know More" page
+            if (window.location.pathname.includes('know-more.html')) {
+                animateSections();
+            }
+        });
+    </script>
+</body>
+
+</html>

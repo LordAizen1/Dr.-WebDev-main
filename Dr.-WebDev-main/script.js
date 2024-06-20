@@ -1,16 +1,22 @@
 document.addEventListener("DOMContentLoaded", function() {
-    document.querySelector('.nav-btn.get-in-touch').addEventListener('click', function(e) {
-        e.preventDefault();
+    const sectionsToAnimate = document.querySelectorAll('.fade-in-from-below');
 
-        document.getElementById('last-footer').scrollIntoView({ behavior: 'smooth' });
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+        );
+    }
 
-        // Add the jiggle class to the Mail Me button
-        const mailMeButton = document.querySelector('.mail-me');
-        mailMeButton.classList.add('jiggle');
+    function animateSections() {
+        sectionsToAnimate.forEach(section => {
+            section.classList.add('active');
+        });
+    }
 
-        // Remove the jiggle class after the animation duration
-        setTimeout(function() {
-            mailMeButton.classList.remove('jiggle');
-        }, 300); // Duration should match the animation duration
-    });
+    // Check if the current page is the "Know More" page
+    if (window.location.pathname.includes('know-more.html')) {
+        animateSections();
+    }
 });
